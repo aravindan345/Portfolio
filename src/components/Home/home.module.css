@@ -60,7 +60,7 @@ main{
     /* animation: renderFromRight 1s ease forwards; */
 }
 .avatarImage img{
-    height: 30rem;
+    height: 25rem;
     object-fit:cover;
 }
 .connectText{

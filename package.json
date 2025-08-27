@@ -4,6 +4,7 @@
   "homepage": "https://killer-abhi.github.io/Portfolio",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.11.0",

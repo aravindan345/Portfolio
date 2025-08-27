@@ -1,13 +1,12 @@
 const PersonalData = {
-    firstName: "Abhishek",
-    lastName: "Kumar",
-    nickName:"<  killer - abhi >",
-    mobNo:"+91 8299069282",
-    email:"abhi09148299@gmail.com",
+    firstName: "VIJAY ARAVINDAN",
+    lastName: "U S",
+    mobNo:"+91 8220233838",
+    email:"vijayaravindan1065@gmail.com",
     address:"India",
-    aboutMe:"Hi Everyone, I am Abhishek Kumar from Uttar Pradesh, India.I learned C, C++, Python, JavaScript etc, Worked with libraries & frameworks like ReactJS, NodeJS. Have a keen knowledge of databases like MySQL, MongoDB and Firebase. Eager to contribute to innovative projects and gain hands-on experience in a dynamic and collaborative",
-    resumeLink:'https://drive.google.com/file/d/1vfnzDcN4uATaNZ7cc9kdKvep9ZBUN_be/view?usp=sharing',
+    aboutMe:"Hi Everyone, I am VIJAY ARAVINDAN from Dindugal Tamil Nadu,India. I am a passionate Frontend Developer with strong skills in React.js, JavaScript, HTML, CSS, and Tailwind CSS. I enjoy creating modern, responsive, and user-friendly web applications with a focus on clean design and smooth user experience. I am also familiar with Git and GitHub for version control and teamwork. Currently, I am expanding my knowledge in the MERN stack to strengthen my full-stack development skills. I love solving problems, building creative projects, and continuously learning new technologies to grow as a developer.",
+    resumeLink:'https://drive.google.com/file/d/1CHfLFZ-2zA0dABOadIw5zSoDouPUJI3T/view?usp=sharing',
     imageUrl:''
 }
-export const autoTypeData=['3rd Year IT Grad', 'MERN Stack Developer','Flutter App Developer', 'Open Source Contributor'];
+export const autoTypeData=['Frontend Developer !'];
 export default PersonalData;

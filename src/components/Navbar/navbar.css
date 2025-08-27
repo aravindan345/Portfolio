@@ -12,14 +12,27 @@
 	width: 100%;
 	z-index: 1000;
 }
-.logoContainer {
+/* .logoContainer {
 	margin-right: auto;
 	margin-left: 5%;
-	font-size: 2rem;
-}
+	font-size: 2rem; */
+/* } */
 #logo{
-	font-family: "Alex Brush";
+	
+  font-family: "Poppins"; /* Modern clean font */
+  font-size: 28px;
+  font-weight: 700;
+  color:#ff00cc; /* Cyan shade */
+  letter-spacing: 2px;
+  text-transform: uppercase; /* Optional */
+  cursor: pointer; /* if you want hover effect */
+  transition: color 0.3s ease;
+  margin-left: 15px;
 }
+#logo:hover {
+  color: skyblue; /* Hover color */
+}
+
 .navsContainer {
 	display: flex;
 	gap: 1rem;

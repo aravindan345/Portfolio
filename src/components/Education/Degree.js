@@ -15,7 +15,7 @@ function Degree(props) {
     return (
         <div className={classes.degreeMain}>
             <h1 style={{ color: nonThemeColor }}>
-                Degree Pursuing
+                Educational Qualification
             </h1>
             <div className={classes.degreeCard}>
                 <div className={`${classes.degreeImage} centered`} style={{borderColor:uiColor}}>

@@ -1,35 +1,37 @@
 const languagesDone = [
     {
-        name: 'C++',
+        name: 'Javascript',
         percentDone: 90
     },
     {
-        name: 'Python',
-        percentDone: 70
+        name: 'React Js',
+        percentDone: 85
     },
     {
-        name: 'React Js',
+        name: 'Tailwind Css',
         percentDone: 80
     },
     {
-        name: 'Node Js',
+        name: 'Bootstrap',
         percentDone: 70
     },
     {
-        name: 'Dart',
+        name: 'Python',
         percentDone:40
     }
 ]
 const EducationData={
-    collegeName:"Rajkiya Engineering College, Ambedkar Nagar",
-    courseName:"B.Tech in Information Technology",
-    couseStartYear:"2021",
-    courseEndYear:"Present",
+    collegeName:"Karpagam College of Engineering.",
+    courseName:"Master of Computer Applications",
+    couseStartYear:"2023",
+    courseEndYear:"2025",
     details:[
-        'I joined my college in 2021. Cleared First and Second Year with a good academic performance.',
+        'I joined my PG in 2023. Cleared First and Second Year with a good academic performance.',
         'I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, COA, AI etc.',
-        ' Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.'
+        ' Apart from this, I have done courses on Full Stack Development.'
     ],
     codingStatus:languagesDone
 }
+
+
 export default EducationData;

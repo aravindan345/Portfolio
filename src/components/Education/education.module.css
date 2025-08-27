@@ -38,36 +38,42 @@
     width: 100%;
     /* background-color: aquamarine; */
 }
+
+/* ✅ Fixed progress bar */
 .progressBar{
     margin-top: 0.5rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    /* background-color: antiquewhite; */
+    gap: 1rem; /* spacing between label and bar */
     width: 100%;
 }
+
 .progressBar label{
-    text-align: center;
-    width: 20%;
+    flex: 0 0 20%; /* fixed width for text */
     font-size: 1.8rem;
     font-weight: 800;
+    text-align: left; /* align text nicely */
 }
+
 .progressBar h5{
-    text-align: center;
-    width: 15%;
+    flex: 0 0 15%;
     font-size: 1.5rem;
     font-weight: 800;
+    text-align: center;
 }
+
 .progressBar progress{
-    width: 80%;
+    flex: 1; /* take all remaining space */
     -webkit-appearance: none;
     appearance: none;
     height: 1.8rem;
 }
+
 .progressBar progress::-webkit-progress-bar{
     background-color: rgb(178, 129, 178);
     border-radius: 0.5rem;
 }
+
 .progressBar progress::-webkit-progress-value{
     animation: load 2s normal forwards;
     border-radius: 0.5rem;
@@ -78,6 +84,8 @@
     0% { width: 0%; }
     100% { width: 100%; }
 }
+
+/* Responsive */
 @media (max-width:768px) {
     .education{
         padding-top: 0rem;
@@ -100,23 +108,19 @@
         width: 100%;
     }
     .educationCard h1{
-        /* text-align: center; */
         font-size: 4rem;
         font-weight: 700;
     }
     .educationCard h2{
-        /* margin-top: 1.5rem; */
-        /* text-align: center; */
         font-size: 1.5rem;
         font-weight: 700;
     }
     .progressBar label{
-        /* text-align: center; */
-        width: 30%;
+        flex: 0 0 30%;
         font-size: 1.5rem;
     }
     .progressBar progress{
-        width: 70%;
+        flex: 1;
         height: 1.5rem;
     }
 }
@@ -125,8 +129,8 @@
     .app-content{
         margin-top: 4rem;
     }
-    
 }
+
 @keyframes renderFromLeft {
     0%{
         opacity: 0;
