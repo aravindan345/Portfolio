@@ -10,7 +10,7 @@ This project showcases my **education, skills, and projects**. It is built with 
 ---
 
 ## 📸 Screenshots
-(Add screenshots of your portfolio UI, e.g. `home.png`, `education.png`, `skills.png`)  
+(Add screenshots of your portfolio UI, e.g. `home.png`, `education.png`, `getInTouch.png`)  
 
 - ![Home](home.png)  
 - ![Education](education.png)  
