@@ -11,7 +11,7 @@ const Contact = () => {
   const [btnText, setBtnText] = useState("Send Message");
   const [isSent, setIsSent] = useState(false);
   const [enteredLName, setEnteredLName] = useState("");
-  const [enteredTitle, setEnteredTitle] = useState(""); // ✅ Title state
+  const [enteredTitle, setEnteredTitle] = useState("");
 
   // ✅ Input Validations
   const {
@@ -52,7 +52,7 @@ const Contact = () => {
     enteredEmailIsValid &&
     enteredMessageIsValid &&
     enteredPhoneIsValid &&
-    enteredTitle.trim() !== "" // ✅ Title must be entered
+    enteredTitle.trim() !== ""
   ) {
     formIsValid = true;
   }
@@ -77,40 +77,41 @@ const Contact = () => {
       name: enteredName + " " + enteredLName,
       email: enteredEmail,
       phone: enteredPhone,
-      title: enteredTitle, // ✅ Add title
+      title: enteredTitle,
       message: enteredMessage,
     };
 
     finishEnteringHandler();
-    sendMessageHandler(message);
+    await sendMessageHandler(message);
   };
 
   // ✅ Send Message via EmailJS
   const sendMessageHandler = async (message) => {
-  setBtnText("Sending...");
+    setBtnText("Sending...");
 
-  try {
-    await emailjs.send(
-      "service_ne557bb",   // ✅ Your Service ID
-      "template_ex9cn51",  // ✅ Your Template ID
-      {
-        title: "New Portfolio Contact", // ✅ Matches {{title}}
-        name: message.name,             // ✅ Matches {{name}}
-        email: message.email,           // ✅ Matches {{email}}
-        message: message.message,       // ✅ Matches {{message}}
-      },
-      "VnA3xbHbVPMP_wkZo"  // ✅ Your Public Key
-    );
+    try {
+      await emailjs.send(
+        "service_ne557bb", // 🔑 Your Service ID
+        "template_ex9cn51", // 🔑 Your Template ID
+        {
+          title: message.title,   // ✅ Subject
+          name: message.name,     // ✅ Full name
+          email: message.email,   // ✅ Email
+          phone: message.phone,   // ✅ Phone
+          message: message.message, // ✅ Message
+        },
+        "VnA3xbHbVPMP_wkZo" // 🔑 Your Public Key
+      );
 
-    alert("Message sent successfully ✅");
-    setBtnText("Send");
-  } catch (error) {
-    console.error("FAILED...", error);
-    alert("Message failed ❌. Please try again.");
-    setBtnText("Send");
-  }
-};
-
+      alert("Message sent successfully ✅");
+      setBtnText("Message Sent");
+      setIsSent(true);
+    } catch (error) {
+      console.error("FAILED...", error);
+      alert("Message failed ❌. Please try again.");
+      setBtnText("Send Message");
+    }
+  };
 
   const finishEnteringHandler = () => {
     setIsEntering(false);
@@ -142,9 +143,9 @@ const Contact = () => {
   return (
     <Fragment>
       <Prompt
-        when={isEntering}
+        when={isEntering && !isSent}
         message={() =>
-          "Are You Sure You Want To Leave ? All your entered data will be lost!"
+          "Are You Sure You Want To Leave? All your entered data will be lost!"
         }
       />
       <div className={classes.contactFormCard}>
