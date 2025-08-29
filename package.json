@@ -1,7 +1,7 @@
 {
   "name": "personal-portfolio",
   "version": "0.1.0",
-  "homepage": "https://killer-abhi.github.io/Portfolio",
+  "homepage": "https://github.com/aravindan345/Portfolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
