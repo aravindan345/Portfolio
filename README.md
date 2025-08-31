@@ -30,7 +30,8 @@ This project showcases my **education, skills, and projects**. It is built with 
 
 ## 🚀 Live Demo
 Check out my portfolio here:  
-👉 [https://aravindan345.github.io/Portfolio/](https://aravindan345.github.io/Portfolio/)  
+👉 [https://portfoliovij.netlify.app](https://portfoliovij.netlify.app)
+  
 
 ---
 
